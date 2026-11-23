@@ -1,7 +1,7 @@
 # telegraph-fix-fixture
 
 A small TypeScript project on zod 3, used to test [Telegraph PR Agent](https://github.com/borodedamie/telegraph-pr-agent)
-on a real breaking upgrade: zod 3.25.76 → 4.x.
+on a real breaking upgrade: zod 3.25.75 → 4.x (3.25.76 until 23 Nov; moved so the bot buys a fresh answer after a miner update).
 
 `src/user.ts` uses four zod 3 APIs that zod 4 removed: `required_error` / `invalid_type_error`,
 one-argument `z.record`, `z.string().ip()` and `ZodError.errors`. `test/user.test.ts` checks the
